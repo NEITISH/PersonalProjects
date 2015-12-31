@@ -1,0 +1,39 @@
+PODS:
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection (= 2.4.1)
+    - AFNetworking/NSURLSession (= 2.4.1)
+    - AFNetworking/Reachability (= 2.4.1)
+    - AFNetworking/Security (= 2.4.1)
+    - AFNetworking/Serialization (= 2.4.1)
+    - AFNetworking/UIKit (= 2.4.1)
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Branch (0.11.8)
+  - MBProgressHUD (0.8)
+  - TMCache (1.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.4.1)
+  - Branch
+  - MBProgressHUD (~> 0.8)
+  - TMCache
+
+SPEC CHECKSUMS:
+  AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
+  Branch: 937f58efb96bc758442b02118658868e6d30716a
+  MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
+  TMCache: d51f182dfb7a29328cf5148ccad033415bb2b2e2
+
+COCOAPODS: 0.39.0

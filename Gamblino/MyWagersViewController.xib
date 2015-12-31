@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyWagersViewController">
+            <connections>
+                <outlet property="findGamesButton" destination="Gbo-6e-irn" id="t9U-WT-WOx"/>
+                <outlet property="noWagersDescriptionLabel" destination="D3H-JT-Crz" id="1vb-vI-I1m"/>
+                <outlet property="noWagersLabel" destination="rOT-ER-EoL" id="1Ph-GF-esb"/>
+                <outlet property="noWagersView" destination="7iw-XE-DKb" id="jQj-BJ-jWt"/>
+                <outlet property="segmentedControl" destination="hLK-uj-HWt" id="hIJ-Bd-QCO"/>
+                <outlet property="tableView" destination="0jH-5c-LmR" id="Dje-Nc-QCz"/>
+                <outlet property="view" destination="RF8-aB-3Bt" id="ged-dZ-cin"/>
+                <outlet property="viewProfileButton" destination="wX1-k4-vXa" id="vWx-0w-Tg4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RF8-aB-3Bt">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-scroll-texture" id="kZc-rq-3ZC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="hLK-uj-HWt">
+                    <rect key="frame" x="10" y="10" width="300" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="UPCOMING"/>
+                        <segment title="IN PROGRESS"/>
+                        <segment title="FINAL RESULTS"/>
+                    </segments>
+                    <color key="tintColor" red="0.78823536630000002" green="0.7607843876" blue="0.69411766529999996" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <action selector="segmentedControlValueChangeAction:" destination="-1" eventType="valueChanged" id="LIt-O4-dbe"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="0jH-5c-LmR">
+                    <rect key="frame" x="0.0" y="46" width="320" height="522"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="j42-5N-TsT"/>
+                        <outlet property="delegate" destination="-1" id="LTc-fs-TeS"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" id="7iw-XE-DKb">
+                    <rect key="frame" x="0.0" y="46" width="320" height="522"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO UPCOMING WAGERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rOT-ER-EoL">
+                            <rect key="frame" x="0.0" y="75" width="320" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.12549019607843137" green="0.10980392156862745" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don’t have any upcoming wagers. Check out available games and let it ride!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D3H-JT-Crz">
+                            <rect key="frame" x="10" y="106" width="300" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.45098039215686275" green="0.41960784313725491" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="r35-EV-BZK">
+                            <rect key="frame" x="0.0" y="425" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.78823529410000004" green="0.76078431369999999" blue="0.69019607839999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="NhW-2y-siS">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.78823529410000004" green="0.76078431369999999" blue="0.69019607839999997" alpha="0.5" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gbo-6e-irn">
+                            <rect key="frame" x="17" y="443" width="286" height="61"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <state key="normal" image="findAvailableGames">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="findGamesAction:" destination="-1" eventType="touchUpInside" id="T1K-0g-5Ek"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wX1-k4-vXa">
+                            <rect key="frame" x="17" y="443" width="286" height="61"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <state key="normal" image="viewProfileButton">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="findGamesAction:" destination="-1" eventType="touchUpInside" id="u2Z-wP-CSQ"/>
+                                <action selector="viewProfileAction:" destination="-1" eventType="touchUpInside" id="Wua-NY-J5a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-scroll-texture" width="320" height="1136"/>
+        <image name="findAvailableGames" width="286" height="61"/>
+        <image name="viewProfileButton" width="286" height="61"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
